@@ -7,14 +7,14 @@ ktor:
       - com.RoutingKt.configureRouting
 koog:
   google:
-    apikey: "AIzaSyDyK8HFRjfN7WISGnJHKmxD_4A3xHPQs2c"
+    apikey: "${?GOOGLE_API_KEY}"
     baseUrl: https://generativelanguage.googleapis.com
 
 imap:
   host: "imap.gmail.com"
   port: 993
-  username: "cuchopamela@gmail.com"
-  password: "cpjychyqgfryjyjf"
+  username: "${?IMAP_USERNAME}"
+  password: "${?IMAP_PASSWORD}"
   ssl: true
   searchDaysBack: 1
   searchDaysForward: 1
